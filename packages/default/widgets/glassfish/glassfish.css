@@ -1,0 +1,55 @@
+.content {
+  font-size: 20px;
+  /*color: #454545;*/
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*svg.diagram {*/
+  /*height: 100%;*/
+  /*width: 100%;*/
+/*}*/
+
+/*.node {*/
+  /*cursor: pointer;*/
+/*}*/
+
+/*.node circle {*/
+  /*fill: #fff;*/
+  /*stroke: steelblue;*/
+  /*stroke-width: 1.5px;*/
+/*}*/
+
+/*.node text {*/
+  /*font: 12px sans-serif;*/
+  /*color: white;*/
+  /*stroke: white;*/
+/*}*/
+
+/*.link {*/
+  /*fill: none;*/
+  /*stroke: #ccc;*/
+  /*stroke-width: 1.5px;*/
+/*}*/
+
+.node {
+  cursor: pointer;
+}
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.node text {
+  font: 10px sans-serif;
+}
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+body {
+  overflow: hidden;
+}

@@ -1,0 +1,44 @@
+/*.content {*/
+/*font-size: 35px;*/
+/*color: #454545;*/
+/*font-weight: bold;*/
+/*text-align: center;*/
+/*}*/
+
+.leave-dates, .leave-summary {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.leave-dates {
+  width: 35%;
+}
+
+.leave-summary {
+  width: 65%;
+}
+
+.leave-event {
+  font-size: 30px;
+}
+
+table {
+  font-size: 20px;
+  border: solid white 1px;
+  border-collapse: collapse;
+}
+
+thead td {
+  border-bottom: solid white 1px;
+}
+
+tbody td,
+thead td {
+  border-left: solid white 1px;
+}
+
+td {
+  padding: 5px;
+}

@@ -1,0 +1,25 @@
+/*.content {*/
+    /*font-size: 35px;*/
+    /*color: #454545;*/
+    /*font-weight: bold;*/
+    /*text-align: center;*/
+/*}*/
+
+.leave-dates, .leave-summary {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.leave-dates {
+  width: 35%;
+}
+
+.leave-summary {
+  width: 65%;
+}
+
+.leave-event {
+  font-size: 20px;
+}

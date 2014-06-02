@@ -1,0 +1,23 @@
+{
+  "private"      : true,
+  "license"      : "Apache License, Version 2.0",
+  "author"       : "Atlassian",
+  "name"         : "atlasboard-default-package",
+  "description"  : "A default package for AtlasBoard",
+  "version"      : "0.0.1",
+  "homepage"     : "",
+  "repository"   : {
+    "type" : "git",
+    "url"  : ""
+  },
+  "engines"      : {
+    "node" : ">=0.8"
+  },
+  "dependencies" : {
+    "chef-api" : "*",
+    "github"   : "*",
+    "lodash"   : "*",
+    "request"  : "*",
+    "q"        : "*"
+  }
+}
