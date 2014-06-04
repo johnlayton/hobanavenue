@@ -26,3 +26,57 @@ Install :
 2. install atlasboard "npm install atlasboard"
 3. add some config (get from jlayton)
 4. run atlasboard start 4444 && open http://localhost:444
+
+Configure :
+
+1. place an amended version of this config in ./packages/default/_your_wallboard_name.json
+```javascript
+{
+  "layout" : {
+    "title"    : "FISG",
+    "customJS" : ["jquery.peity.js", "tree.js"],
+    "widgets"  : [
+      { "row" : 1, "col" : 1, "width"  : 2, "height" : 2, "widget" : "pulls",     "job" : "pullsjob",     "config" : "git" },
+      { "row" : 1, "col" : 3, "width"  : 3, "height" : 2, "widget" : "chef",      "job" : "chefjob",      "config" : "chef" },
+      { "row" : 4, "col" : 1, "width"  : 6, "height" : 2, "widget" : "glassfish", "job" : "glassfishjob", "config" : "glassfish" }
+    ]
+  },
+  "config" : {
+    "git" : {
+      "github" : {
+        "version"    : "3.0.0",
+        "debug"      : false,
+        "protocol"   : "http",
+        "host"       : "git.fire.dse.vic.gov.au",
+        "port"       : 80,
+        "pathPrefix" : "/api/v3",
+        "timeout"    : 5000
+      },
+      "auth"   : {
+        "type"  : "oauth",
+        "token" : "_replace_with_your_token_"
+      },
+      "org"    : "fisg",
+      "title"  : "Fisg Pull Requests"
+    },
+    "chef" : {
+      "auth"    : {
+        "user_name" : "buildbot",
+        "key_path"  : "_path_to_/buildbot.pem",
+        "url"       : "https://chef.fire.dse.vic.gov.au"
+      },
+      "title" : "Fisg Applications",
+      "bag"   : "applications"
+    },
+    "glassfish" : {
+      "auth"      : {
+        "user_name" : "buildbot",
+        "key_path"  : "_path_to_/buildbot.pem",
+        "url"       : "https://chef.fire.dse.vic.gov.au"
+      },
+      "title"     : "Fisg Deployments"
+    },
+  }
+}
+```
+
