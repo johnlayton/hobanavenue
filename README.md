@@ -30,7 +30,8 @@ Install :
 Configure :
 
 1. place an amended version of this config in ./packages/default/_your_wallboard_name.json
-```javascript
+
+```
 {
   "layout" : {
     "title"    : "FISG",
