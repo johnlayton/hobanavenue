@@ -18,3 +18,11 @@ Widgets:
 4. build - not started
 5. jira - not started
 
+How To:
+
+Install :
+
+1. install jsenv from https://github.com/johnlayton/farmclose
+2. install atlasboard "npm install atlasboard"
+3. add some config (get from jlayton)
+4. run atlasboard start 4444 && open http://localhost:444
